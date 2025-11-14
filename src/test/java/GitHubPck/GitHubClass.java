@@ -15,6 +15,7 @@ public class GitHubClass {
 	@BeforeClass
 	public void tearUp()
 	{
+		System.out.println("Open browser");
 		driver=new ChromeDriver();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
